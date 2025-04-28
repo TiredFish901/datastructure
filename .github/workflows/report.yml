@@ -16,5 +16,8 @@ jobs:
               with:
                   python-version: "3.x"
 
+            - name: Make validator script executable
+              run: chmod +x ./.github/scripts/validator_linux
+
             - name: Validate reports
               run: ./.github/scripts/validator_linux
